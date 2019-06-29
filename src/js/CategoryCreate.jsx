@@ -23,7 +23,7 @@ export default class CategoryCreate extends React.Component {
 
   handleSubmit(event) {
     request
-      .post('http://localhost:4000/category/insert')
+      .post('https://react-tasklist-backend.herokuapp.com/category/insert')
       .type('form')
       .send({
         title: this.state.title

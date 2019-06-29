@@ -29,7 +29,7 @@ export default class CategoryList extends React.Component {
     this.categoryChange = this.categoryChange.bind(this);
 
     request
-      .post('http://localhost:4000/posts/category')
+      .post('https://react-tasklist-backend.herokuapp.com/posts/category')
       .type('form')
       .send({
         category: this.props.match.params.id
@@ -40,7 +40,7 @@ export default class CategoryList extends React.Component {
       });
 
     request
-        .get('http://localhost:4000/categorys')
+        .get('https://react-tasklist-backend.herokuapp.com/categorys')
         .end((err, res) => {
             var categorys = res.body;
             this.setState({ categorys });
@@ -50,7 +50,7 @@ export default class CategoryList extends React.Component {
 
   handleDelete(event) {
     request
-      .post('http://localhost:4000/delete')
+      .post('https://react-tasklist-backend.herokuapp.com/delete')
       .type('form')
       .send({
         id: event.target.value
@@ -62,7 +62,7 @@ export default class CategoryList extends React.Component {
 
   categoryDefault(event){
     request
-      .get('http://localhost:4000/posts')
+      .get('https://react-tasklist-backend.herokuapp.com/posts')
       .end((err, res) => {
         var posts = res.body;
         this.setState({posts: posts});
@@ -71,7 +71,7 @@ export default class CategoryList extends React.Component {
 
   categoryChange(event){
     request
-      .post('http://localhost:4000/posts/category')
+      .post('https://react-tasklist-backend.herokuapp.com/posts/category')
       .type('form')
       .send({
         category: event.target.value
@@ -97,7 +97,7 @@ export default class CategoryList extends React.Component {
         changeStatus = 0;
     }
     request
-      .post('http://localhost:4000/update/status')
+      .post('https://react-tasklist-backend.herokuapp.com/update/status')
       .type('form')
       .send({
         status: changeStatus,

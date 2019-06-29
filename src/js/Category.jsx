@@ -19,7 +19,7 @@ export default class Category extends React.Component {
     };
 
     request
-        .get('http://localhost:4000/categorys')
+        .get('https://react-tasklist-backend.herokuapp.com/categorys')
         .end((err, res) => {
             var categorys = res.body;
             this.setState({ categorys });
@@ -28,7 +28,7 @@ export default class Category extends React.Component {
 
   handleDelete(event) {
     request
-      .post('http://localhost:4000/category/delete')
+      .post('https://react-tasklist-backend.herokuapp.com/category/delete')
       .type('form')
       .send({
         id: event.target.value

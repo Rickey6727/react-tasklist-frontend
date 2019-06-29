@@ -17,7 +17,7 @@ export default class CategoryEdit extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 
     request
-        .post('http://localhost:4000/categorys/category')
+        .post('https://react-tasklist-backend.herokuapp.com/categorys/category')
         .type('form')
         .send({
           id: this.props.match.params.id
@@ -34,7 +34,7 @@ export default class CategoryEdit extends React.Component {
 
   handleSubmit(event) {
     request
-      .post('http://localhost:4000/category/update')
+      .post('https://react-tasklist-backend.herokuapp.com/category/update')
       .type('form')
       .send({
         id: this.state.id,

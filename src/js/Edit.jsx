@@ -29,7 +29,7 @@ export default class Edit extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 
     request
-      .post('http://localhost:4000/posts/edit')
+      .post('https://react-tasklist-backend.herokuapp.com/posts/edit')
       .type('form')
       .send({
         id: this.props.match.params.id
@@ -44,7 +44,7 @@ export default class Edit extends React.Component {
       });
 
     request
-        .get('http://localhost:4000/categorys')
+        .get('https://react-tasklist-backend.herokuapp.com/categorys')
         .end((err, res) => {
             var categorys = res.body;
             this.setState({ categorys });
@@ -76,7 +76,7 @@ export default class Edit extends React.Component {
     var d = ("00" + date.getDate()).slice(-2);
     var limitDate = y + "-" + m + "-" + d;
     request
-      .post('http://localhost:4000/update')
+      .post('https://react-tasklist-backend.herokuapp.com/update')
       .type('form')
       .send({
         type: this.props.status,
