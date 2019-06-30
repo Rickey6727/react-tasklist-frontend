@@ -254,3 +254,9 @@ button{
 .task-creator-wrapper {
     margin: 100px 0 0 250px;
 }
+
+@media screen and (max-width:480px) { 
+    .category-wrapper {
+        display:none;
+    }
+}
