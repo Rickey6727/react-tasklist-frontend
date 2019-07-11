@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-tasklist-frontend/static/css/main.5b8d47c7.chunk.css",
+    "main.js": "/react-tasklist-frontend/static/js/main.aff32524.chunk.js",
+    "main.js.map": "/react-tasklist-frontend/static/js/main.aff32524.chunk.js.map",
+    "runtime~main.js": "/react-tasklist-frontend/static/js/runtime~main.3a27391e.js",
+    "runtime~main.js.map": "/react-tasklist-frontend/static/js/runtime~main.3a27391e.js.map",
+    "static/css/2.c7bb94bc.chunk.css": "/react-tasklist-frontend/static/css/2.c7bb94bc.chunk.css",
+    "static/js/2.e827bb0e.chunk.js": "/react-tasklist-frontend/static/js/2.e827bb0e.chunk.js",
+    "static/js/2.e827bb0e.chunk.js.map": "/react-tasklist-frontend/static/js/2.e827bb0e.chunk.js.map",
+    "index.html": "/react-tasklist-frontend/index.html",
+    "precache-manifest.35cfc380d7bd5e11019edd6985f5a85f.js": "/react-tasklist-frontend/precache-manifest.35cfc380d7bd5e11019edd6985f5a85f.js",
+    "service-worker.js": "/react-tasklist-frontend/service-worker.js",
+    "static/css/2.c7bb94bc.chunk.css.map": "/react-tasklist-frontend/static/css/2.c7bb94bc.chunk.css.map",
+    "static/css/main.5b8d47c7.chunk.css.map": "/react-tasklist-frontend/static/css/main.5b8d47c7.chunk.css.map"
+  }
+}
